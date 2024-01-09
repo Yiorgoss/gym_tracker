@@ -1,6 +1,7 @@
 <script lang="ts">
+  import {CldImage} from "svelte-cloudinary"
   	export let data;
     console.log(data)
 </script>
 
-<p>{data.rows[0].text}</p>
+<p><CldImage src='test' width={300} height={400} alt="test"/></p>

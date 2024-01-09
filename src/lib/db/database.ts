@@ -2,12 +2,12 @@ import type { DB } from '$lib/db/db';
 
 // import { Pool } from '@neondatabase/serverless';
 import { Kysely, PostgresDialect } from 'kysely';
-import { DATABASE_URL } from '$env/static/private';
+import { DATABASE_URL_POOL } from '$env/static/private';
 import { NeonHTTPDialect } from 'kysely-neon';
 
 export const db = new Kysely<DB>({
   dialect: new NeonHTTPDialect({
-    connectionString: DATABASE_URL
+    connectionString: DATABASE_URL_POOL
   })
 });
 
