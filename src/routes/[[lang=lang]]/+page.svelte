@@ -3,5 +3,5 @@
 </script>
 
 <div>
-	{m.hello_world()}
+	{m.hello({name:"xxx"})}
 </div>

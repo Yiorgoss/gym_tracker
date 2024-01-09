@@ -30,3 +30,11 @@ function withoutLanguageTag(path: string) {
   }
   return path
 }
+
+
+export const isRTL = (tag: string): boolean => {
+  const rtl = new Set<string>(['he'])
+  console.log('has tag', rtl.has(tag))
+  return rtl.has(tag)
+}
+

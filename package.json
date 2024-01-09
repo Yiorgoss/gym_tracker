@@ -11,6 +11,7 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"generate": "kysely-codegen --dialect postgres --out-file src/lib/db/db.d.ts ",
+		"compile": "paraglide-js compile --project ./project.inlang ",
 		"postinstall": "paraglide-js compile --project ./project.inlang"
 	},
 	"devDependencies": {
